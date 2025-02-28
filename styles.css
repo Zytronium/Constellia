@@ -1,0 +1,152 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+:root {
+    --primary: #007bff;
+    --background: #0a0808;
+    --link: #18aaed;
+}
+
+/* Body Styling */
+body {
+    color: white;
+    text-align: center;
+    background-color: #0a0a0a;
+    overflow-x: hidden;
+}
+
+/* Background Image */
+#background-img {
+    position: fixed;
+    top: -3%;
+    left: -3%;
+    width: 105%;
+    height: 105%;
+    object-fit: cover;
+    z-index: -10;
+    filter: blur(4px) brightness(50%);
+}
+
+/* Main Container */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+/* Logo */
+#logo {
+    width: 60%;
+    margin-bottom: 1rem;
+}
+
+/* Title */
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.8);
+    margin-bottom: 1rem;
+}
+
+/* Play Button */
+button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #3377ff;
+    color: #e3e3e3;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 10px rgb(51, 95, 255, 0.5);
+    margin-bottom: 1.5rem;
+}
+
+button:hover {
+    background-color: #335fff;
+    transform: scale(1.05);
+}
+
+/* Play Button Icon */
+button img {
+    height: 1.6rem;
+}
+
+/* Paragraph Styling */
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+    padding-bottom: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--link)
+}
+
+a:visited {
+    color: var(--link)
+}
+
+a:hover {
+    color: #76ccf4
+}
+
+a:active {
+    color: #90dcff
+}
+
+#header-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 1.75rem;
+}
+
+.container {
+    max-width: 800px;
+    text-align: start;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Entire scrollbar */
+::-webkit-scrollbar {
+    width: 14px; /* Width of the vertical scrollbar */
+    height: 14px; /* Height of the horizontal scrollbar */
+}
+
+/* Scrollbar track */
+::-webkit-scrollbar-track {
+    background: #000c17; /* Track color */
+}
+
+/* Scrollbar thumb (draggable part) */
+::-webkit-scrollbar-thumb {
+    background: #005ca9; /* Thumb color */
+    border-radius: 5px; /* Rounded corners */
+    border: 2px solid #000c17; /* Creates a gap between thumb and track */
+}
+
+/* Hover effect on scrollbar thumb */
+::-webkit-scrollbar-thumb:hover {
+    background: #0064b5; /* Thumb color on hover */
+}
+
+/* Active (clicked) effect on scrollbar thumb */
+::-webkit-scrollbar-thumb:active {
+    background: #006cc4; /* Thumb color when actively dragged */
+}
